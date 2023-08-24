@@ -6,3 +6,6 @@
 /src/BH.Backend/.vs/BH.Backend
 /src/BH.Backend/BH.Backend.Model/bin/Debug/net6.0
 /src/BH.Backend/BH.Backend.Model/obj
+/src/BH.Backend/Tests/BH.Backend.Models.Tests/bin/Debug/net6.0
+/src/BH.Backend/.vs/ProjectEvaluation
+/src/BH.Backend/Tests/BH.Backend.Models.Tests/obj
