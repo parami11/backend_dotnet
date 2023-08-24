@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/BH.Backend/.vs/BH.Backend
+/src/BH.Backend/BH.Backend.Model/bin/Debug/net6.0
+/src/BH.Backend/BH.Backend.Model/obj
+/src/BH.Backend/Tests/BH.Backend.Models.Tests/bin/Debug/net6.0
+/src/BH.Backend/.vs/ProjectEvaluation
+/src/BH.Backend/Tests/BH.Backend.Models.Tests/obj
+/src/BH.Backend/Customer/BH.Backend.CustomerService/bin/Debug/net6.0
+/src/BH.Backend/Customer/BH.Backend.CustomerService/obj
+/src/.vs/BH.Backend
+/src/Customer/BH.Backend.CustomerService/bin/Debug/net6.0
+/src/Customer/BH.Backend.CustomerService/obj
+/src/Models/BH.Backend.Model/bin/Debug/net6.0
+/src/Models/BH.Backend.Model/obj
+/src/Models/BH.Backend.Models.Tests/bin/Debug/net6.0
+/src/Models/BH.Backend.Models.Tests/obj
