@@ -18,3 +18,7 @@
 /src/Models/BH.Backend.Model/obj
 /src/Models/BH.Backend.Models.Tests/bin/Debug/net6.0
 /src/Models/BH.Backend.Models.Tests/obj
+/src/Account/BH.Backend.AccountService/bin/Debug/net6.0
+/src/Account/BH.Backend.AccountService/obj
+/src/Account/BH.Backend.AccountService.Tests/bin/Debug/net6.0
+/src/Account/BH.Backend.AccountService.Tests/obj
