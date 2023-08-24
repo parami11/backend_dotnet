@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Backend.Models", "BH.Backend.Model\BH.Backend.Models.csproj", "{DBE0CBC0-43EC-4C6F-AE59-80A9F053D24C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Backend.Models", "BH.Backend.Model\BH.Backend.Models.csproj", "{DBE0CBC0-43EC-4C6F-AE59-80A9F053D24C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{83520C50-BBA4-4615-9554-2D8465B3243A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Backend.Models.Tests", "Tests\BH.Backend.Models.Tests\BH.Backend.Models.Tests.csproj", "{B456F070-B32A-4F99-8469-340F5C0F040A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Backend.Models.Tests", "Tests\BH.Backend.Models.Tests\BH.Backend.Models.Tests.csproj", "{B456F070-B32A-4F99-8469-340F5C0F040A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customer", "Customer", "{4C55A0ED-6872-45B0-9C21-C90BA1E46886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Backend.CustomerService", "Customer\BH.Backend.CustomerService\BH.Backend.CustomerService.csproj", "{37CEB277-9923-436A-8946-925F69B8A664}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +27,17 @@ Global
 		{B456F070-B32A-4F99-8469-340F5C0F040A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B456F070-B32A-4F99-8469-340F5C0F040A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B456F070-B32A-4F99-8469-340F5C0F040A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CEB277-9923-436A-8946-925F69B8A664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CEB277-9923-436A-8946-925F69B8A664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CEB277-9923-436A-8946-925F69B8A664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CEB277-9923-436A-8946-925F69B8A664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B456F070-B32A-4F99-8469-340F5C0F040A} = {83520C50-BBA4-4615-9554-2D8465B3243A}
+		{37CEB277-9923-436A-8946-925F69B8A664} = {4C55A0ED-6872-45B0-9C21-C90BA1E46886}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97D2EE70-3A6D-4517-A984-18C660BF93E8}
