@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\BH.Backend.Model\BH.Backend.Models.csproj" />
+    <ProjectReference Include="..\BH.Backend.Model\BH.Backend.Models.csproj" />
   </ItemGroup>
 
 </Project>
