@@ -9,3 +9,5 @@
 /src/BH.Backend/Tests/BH.Backend.Models.Tests/bin/Debug/net6.0
 /src/BH.Backend/.vs/ProjectEvaluation
 /src/BH.Backend/Tests/BH.Backend.Models.Tests/obj
+/src/BH.Backend/Customer/BH.Backend.CustomerService/bin/Debug/net6.0
+/src/BH.Backend/Customer/BH.Backend.CustomerService/obj
