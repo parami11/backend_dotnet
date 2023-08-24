@@ -11,3 +11,10 @@
 /src/BH.Backend/Tests/BH.Backend.Models.Tests/obj
 /src/BH.Backend/Customer/BH.Backend.CustomerService/bin/Debug/net6.0
 /src/BH.Backend/Customer/BH.Backend.CustomerService/obj
+/src/.vs/BH.Backend
+/src/Customer/BH.Backend.CustomerService/bin/Debug/net6.0
+/src/Customer/BH.Backend.CustomerService/obj
+/src/Models/BH.Backend.Model/bin/Debug/net6.0
+/src/Models/BH.Backend.Model/obj
+/src/Models/BH.Backend.Models.Tests/bin/Debug/net6.0
+/src/Models/BH.Backend.Models.Tests/obj
