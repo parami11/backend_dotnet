@@ -4,9 +4,9 @@ using FluentValidation;
 
 namespace BH.Backend.Models.Validators
 {
-    public class TransactionValidator : AbstractValidator<Transaction>
+    public class TransactionEntityValidator : AbstractValidator<Transaction>
     {
-        public TransactionValidator()
+        public TransactionEntityValidator()
         {
             RuleFor(x => x.ID).NotEqual(Guid.Empty);
 

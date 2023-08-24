@@ -10,6 +10,8 @@ namespace BH.Backend.Models.Validators
         {
             RuleFor(x => x.ID).NotEqual(Guid.Empty);
 
+            RuleFor(x => x.CustomerId).NotEqual(Guid.Empty);
+
             RuleFor(x => x.AccountNumber).NotNull();
             RuleFor(x => x.AccountNumber).NotEmpty().When(m => m.AccountNumber != null);
             RuleFor(x => x.AccountNumber)

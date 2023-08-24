@@ -39,5 +39,14 @@ namespace BH.Backend.Models.Tests
             Assert.False(result.IsValid);
             Assert.Single(result.Errors);
         }
+
+        [Fact]
+        public void InvalidAccount_EmptyCustomerId()
+        {
+            var validator = new AccountEntityValidator();
+            var result = validator.Validate(AccountMock.Account_Invalid_EmptyCustomerId);
+            Assert.False(result.IsValid);
+            Assert.Single(result.Errors);
+        }
     }
 }
