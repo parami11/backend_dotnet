@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Backend.Model", "BH.Backend.Model\BH.Backend.Model.csproj", "{DBE0CBC0-43EC-4C6F-AE59-80A9F053D24C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Backend.Models", "BH.Backend.Model\BH.Backend.Models.csproj", "{DBE0CBC0-43EC-4C6F-AE59-80A9F053D24C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

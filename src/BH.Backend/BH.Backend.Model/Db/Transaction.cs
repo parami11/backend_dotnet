@@ -1,6 +1,6 @@
-﻿using BH.Backend.Model.Enums;
+﻿using BH.Backend.Models.Enums;
 
-namespace BH.Backend.Model.Db
+namespace BH.Backend.Models.Db
 {
     public class Transaction
     {

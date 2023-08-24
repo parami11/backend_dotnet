@@ -1,4 +1,4 @@
-﻿namespace BH.Backend.Model.Db
+﻿namespace BH.Backend.Models.Db
 {
     public class Account
     {

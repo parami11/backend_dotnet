@@ -1,4 +1,4 @@
-﻿namespace BH.Backend.Model.Enums
+﻿namespace BH.Backend.Models.Enums
 {
     public enum TransactionType
     {

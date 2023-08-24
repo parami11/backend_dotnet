@@ -1,8 +1,8 @@
-﻿using BH.Backend.Model.Constants;
-using BH.Backend.Model.Db;
+﻿using BH.Backend.Models.Constants;
+using BH.Backend.Models.Db;
 using FluentValidation;
 
-namespace BH.Backend.Model.Validators
+namespace BH.Backend.Models.Validators
 {
     public class CustomerValidator : AbstractValidator<Customer>
     {

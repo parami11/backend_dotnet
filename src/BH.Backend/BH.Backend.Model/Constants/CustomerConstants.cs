@@ -1,4 +1,4 @@
-﻿namespace BH.Backend.Model.Constants
+﻿namespace BH.Backend.Models.Constants
 {
     public sealed class CustomerConstants
     {

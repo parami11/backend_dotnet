@@ -1,8 +1,8 @@
-﻿using BH.Backend.Model.Db;
-using BH.Backend.Model.Enums;
+﻿using BH.Backend.Models.Db;
+using BH.Backend.Models.Enums;
 using FluentValidation;
 
-namespace BH.Backend.Model.Validators
+namespace BH.Backend.Models.Validators
 {
     public class TransactionValidator : AbstractValidator<Transaction>
     {
