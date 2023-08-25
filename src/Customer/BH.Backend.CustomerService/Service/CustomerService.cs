@@ -2,7 +2,7 @@
 
 namespace BH.Backend.CustomerService.Service
 {
-    internal class CustomerService : ICustomerService
+    public class CustomerService : ICustomerService
     {
         private static List<Customer> _customers = new List<Customer>()
         {

@@ -1,6 +1,7 @@
 ﻿using BH.Backend.Models.Db;
 using FluentValidation;
 using Microsoft.Extensions.Caching.Memory;
+using System.Security.Principal;
 
 namespace BH.Backend.TransactionService.DataAccess
 {
@@ -31,7 +32,10 @@ namespace BH.Backend.TransactionService.DataAccess
         {
             var items = this.GetAll();
 
-            return items.Where(m => m.AccountId.Equals(accountId));
+            if (items != null)
+                return items.Where(m => m.AccountId.Equals(accountId));
+
+            return null;
         }
 
         public void AddValue(Transaction transaction)
@@ -43,6 +47,8 @@ namespace BH.Backend.TransactionService.DataAccess
 
             if (items == null)
                 items = new List<Transaction>() { transaction };
+            else
+                items.Add(transaction);
 
             _memoryCache.Set(TransactionRepository.EntityKey, items);
         }
