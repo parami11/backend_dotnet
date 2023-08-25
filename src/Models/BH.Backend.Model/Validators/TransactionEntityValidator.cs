@@ -10,6 +10,8 @@ namespace BH.Backend.Models.Validators
         {
             RuleFor(x => x.ID).NotEqual(Guid.Empty);
 
+            RuleFor(x => x.AccountId).NotEqual(Guid.Empty);
+
             RuleFor(x => x.TransactionType).NotEqual(TransactionType.None);
 
             RuleFor(x => x.Amount).GreaterThanOrEqualTo(0);

@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace BH.Backend.AccountService.DataAccess
 {
-    public class AccountRepository
+    public class AccountRepository: IAccountRepository
     {
         private readonly IMemoryCache _memoryCache;
 

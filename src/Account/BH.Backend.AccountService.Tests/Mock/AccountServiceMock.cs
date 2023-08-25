@@ -5,6 +5,7 @@ namespace BH.Backend.AccountService.Tests.Mock
 {
     public class AccountServiceMock
     {
-        public static List<Account> ValidAccounts = new List<Account>() { AccountMock.Account_Valid };
+        public static List<Account> ValidAccounts 
+            = new List<Account>() { AccountMock.Account_Valid };
     }
 }

@@ -28,6 +28,16 @@ namespace BH.Backend.Models.Tests
             var validator = new TransactionEntityValidator();
             var result = validator.Validate(TransactionMock.Transaction_Invalid_Amount);
             Assert.False(result.IsValid);
+            Assert.Single(result.Errors);
+        }
+
+        [Fact]
+        public void InvalidTransaction_EmptyAccountId()
+        {
+            var validator = new TransactionEntityValidator();
+            var result = validator.Validate(TransactionMock.Transaction_Invalid_EmptyAccountId);
+            Assert.False(result.IsValid);
+            Assert.Single(result.Errors);
         }
     }
 }
