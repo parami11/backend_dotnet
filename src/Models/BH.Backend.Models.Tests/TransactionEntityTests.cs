@@ -8,7 +8,7 @@ namespace BH.Backend.Models.Tests
         [Fact]
         public void ValidTransaction()
         {
-            var validator = new TransactionValidator();
+            var validator = new TransactionEntityValidator();
             var result = validator.Validate(TransactionMock.Transaction_Valid);
             Assert.True(result.IsValid);
         }
@@ -16,7 +16,7 @@ namespace BH.Backend.Models.Tests
         [Fact]
         public void InvalidTransaction_InvalidTransactionType()
         {
-            var validator = new TransactionValidator();
+            var validator = new TransactionEntityValidator();
             var result = validator.Validate(TransactionMock.Transaction_Invalid_InvalidType);
             Assert.False(result.IsValid);
             Assert.Single(result.Errors);
@@ -25,9 +25,19 @@ namespace BH.Backend.Models.Tests
         [Fact]
         public void InvalidTransaction_InvalidAmount()
         {
-            var validator = new TransactionValidator();
+            var validator = new TransactionEntityValidator();
             var result = validator.Validate(TransactionMock.Transaction_Invalid_Amount);
             Assert.False(result.IsValid);
+            Assert.Single(result.Errors);
+        }
+
+        [Fact]
+        public void InvalidTransaction_EmptyAccountId()
+        {
+            var validator = new TransactionEntityValidator();
+            var result = validator.Validate(TransactionMock.Transaction_Invalid_EmptyAccountId);
+            Assert.False(result.IsValid);
+            Assert.Single(result.Errors);
         }
     }
 }
