@@ -1,7 +1,6 @@
 ﻿using BH.Backend.Models.Db;
 using FluentValidation;
 using Microsoft.Extensions.Caching.Memory;
-using System.Security.Principal;
 
 namespace BH.Backend.TransactionService.DataAccess
 {

@@ -3,6 +3,7 @@ using BH.Backend.Api.Entities;
 using BH.Backend.CustomerService.Service;
 using BH.Backend.Models.Db;
 using BH.Backend.TransactionService.Service;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BH.Backend.Api.Controllers
@@ -14,20 +15,25 @@ namespace BH.Backend.Api.Controllers
         private readonly IAccountService _accountService;
         private readonly ICustomerService _customerService;
         private readonly ITransactionService _transactionService;
+        private readonly IValidator<AccountRequest> _accountRequestValidator;
 
         public AccountController(
             IAccountService accountService,
             ICustomerService customerService,
-            ITransactionService transactionService)
+            ITransactionService transactionService,
+            IValidator<AccountRequest> accountRequestValidator)
         {
             _accountService = accountService;
             _customerService = customerService;
             _transactionService = transactionService;
+            _accountRequestValidator = accountRequestValidator;
         }
 
         [HttpPost]
         public Guid Post([FromBody] AccountRequest accountOpening)
         {
+            _accountRequestValidator.ValidateAndThrow(accountOpening);
+
             // Check existence of customer
             var customers = _customerService.Get();
             var customer = customers.Where(m => m.ID.Equals(accountOpening.CustomerId)).First();
@@ -40,7 +46,7 @@ namespace BH.Backend.Api.Controllers
             };
             _accountService.Add(account);
 
-            if(accountOpening.InitialCredit > 0)
+            if (accountOpening.InitialCredit > 0)
             {
                 var transaction = new Transaction()
                 {
@@ -48,7 +54,7 @@ namespace BH.Backend.Api.Controllers
                     TransactionType = Models.Enums.TransactionType.Debit,
                     Amount = accountOpening.InitialCredit
                 };
-                
+
                 _transactionService.Add(transaction);
             }
 

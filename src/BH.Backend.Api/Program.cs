@@ -1,4 +1,6 @@
 using BH.Backend.AccountService.DataAccess;
+using BH.Backend.Api.Entities;
+using BH.Backend.Api.Validators;
 using BH.Backend.Models.Db;
 using BH.Backend.Models.Validators;
 using BH.Backend.TransactionService.DataAccess;
@@ -24,6 +26,7 @@ namespace BH.Backend.Api
             builder.Services.AddScoped<IValidator<Transaction>, TransactionEntityValidator>()
                 .AddScoped<ITransactionRepository, TransactionRepository>()
                 .AddScoped<TransactionS.ITransactionService, TransactionS.TransactionService>();
+            builder.Services.AddSingleton<IValidator<AccountRequest>, AccountRequestValidator>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
