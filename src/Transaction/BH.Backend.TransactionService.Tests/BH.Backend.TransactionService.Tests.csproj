@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Models\BH.Backend.Models.Tests\BH.Backend.Models.Tests.csproj" />
     <ProjectReference Include="..\BH.Backend.TransactionService\BH.Backend.TransactionService.csproj" />
-    <ProjectReference Include="..\Models\BH.Backend.Models.Tests\BH.Backend.Models.Tests.csproj" />
   </ItemGroup>
 
 </Project>
