@@ -1,6 +1,5 @@
 using BH.Backend.Api.Tests.Mock;
 using BH.Backend.Api.Validators;
-using BH.Backend.Models.Validators;
 
 namespace BH.Backend.Api.Tests
 {

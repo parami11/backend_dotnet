@@ -32,7 +32,7 @@ namespace BH.Backend.Api.Controllers
         [HttpPost]
         public Guid Post([FromBody] AccountRequest accountOpening)
         {
-            _accountRequestValidator.ValidateAndThrow(accountOpening);
+            _accountRequestValidator.Validate(accountOpening);
 
             // Check existence of customer
             var customers = _customerService.Get();
