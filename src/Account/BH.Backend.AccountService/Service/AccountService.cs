@@ -21,7 +21,11 @@ namespace BH.Backend.AccountService.Service
         public IEnumerable<Account> GetByCustomerId(Guid customerId)
         {
             var values = _accountRepository.GetValues();
-            return values.Where(m => m.CustomerId.Equals(customerId));
+
+            if (values != null)
+                return values.Where(m => m.CustomerId.Equals(customerId));
+
+            return null;
         }
 
         public void Add(Account account)

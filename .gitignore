@@ -29,3 +29,9 @@
 /src/BH.Backend.TransactionService/obj
 /src/BH.Backend.TransactionService.Tests/bin/Debug/net6.0
 /src/BH.Backend.TransactionService.Tests/obj
+/src/Transaction/BH.Backend.TransactionService/bin/Debug/net6.0
+/src/Transaction/BH.Backend.TransactionService/obj
+/src/Transaction/BH.Backend.TransactionService.Tests/bin/Debug/net6.0
+/src/Transaction/BH.Backend.TransactionService.Tests/obj
+/src/BH.Backend.Api.Tests/bin/Debug/net6.0
+/src/BH.Backend.Api.Tests/obj

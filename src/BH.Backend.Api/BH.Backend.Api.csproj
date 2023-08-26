@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Account\BH.Backend.AccountService\BH.Backend.AccountService.csproj" />
-    <ProjectReference Include="..\BH.Backend.TransactionService\BH.Backend.TransactionService.csproj" />
     <ProjectReference Include="..\Customer\BH.Backend.CustomerService\BH.Backend.CustomerService.csproj" />
+    <ProjectReference Include="..\Transaction\BH.Backend.TransactionService\BH.Backend.TransactionService.csproj" />
   </ItemGroup>
 
 </Project>

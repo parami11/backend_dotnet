@@ -24,7 +24,11 @@ namespace BH.Backend.TransactionService.Service
         public IEnumerable<Transaction> GetByAcccountId(Guid accountId)
         {
             var values = _transactionRepository.GetByAccountId(accountId);
-            return values.Where(m => m.AccountId.Equals(accountId));
+
+            if (values != null)
+                return values.Where(m => m.AccountId.Equals(accountId));
+
+            return null;
         }
     }
 }

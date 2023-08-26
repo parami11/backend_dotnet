@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace BH.Backend.AccountService.DataAccess
 {
-    public class AccountRepository: IAccountRepository
+    public class AccountRepository : IAccountRepository
     {
         private readonly IMemoryCache _memoryCache;
 
@@ -13,14 +13,14 @@ namespace BH.Backend.AccountService.DataAccess
         private const string EntityKey = "Accounts";
 
         public AccountRepository(
-            IMemoryCache memoryCache, 
+            IMemoryCache memoryCache,
             IValidator<Account> validator)
         {
             _memoryCache = memoryCache;
             _validator = validator;
         }
 
-        public IEnumerable<Account> GetValues()
+        public List<Account> GetValues()
         {
             _memoryCache.TryGetValue(AccountRepository.EntityKey, out List<Account> items);
 
@@ -36,6 +36,8 @@ namespace BH.Backend.AccountService.DataAccess
 
             if (items == null)
                 items = new List<Account>() { account };
+            else
+                items.Add(account);
 
             _memoryCache.Set(AccountRepository.EntityKey, items);
         }
